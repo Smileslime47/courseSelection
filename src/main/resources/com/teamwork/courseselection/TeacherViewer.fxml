@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox fx:id="studentWin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white; -fx-spacing: 0px;" stylesheets="@StudentStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teamwork.courseselection.StudentController">
+    <HBox alignment="TOP_RIGHT" prefHeight="36.0" prefWidth="453.0" style="-fx-background-color: #87CEFA;">
+    <children>
+         <Label prefHeight="36.0" prefWidth="904.0">
+             <graphic>
+                 <FontIcon iconLiteral="fltfmz-window-horizontal-20" iconSize="20" />
+             </graphic>
+             暨北大学教务选课系统
+            <font>
+               <Font name="Microsoft YaHei Bold" size="14.0" />
+            </font>
+         </Label>
+        <Button minWidth="42.0" mnemonicParsing="false" onAction="#minWin" prefHeight="42.0" prefWidth="42.0" styleClass="tittleButton">
+            <graphic>
+                <FontIcon iconLiteral="fltfal-line-horizontal-1-20" iconSize="12" />
+            </graphic>
+        </Button>
+        <Button minWidth="42.0" mnemonicParsing="false" onAction="#closeWin" prefHeight="42.0" prefWidth="42.0" styleClass="tittleButton">
+            <graphic>
+                <FontIcon iconLiteral="fltfal-dismiss-12" iconSize="12" />
+            </graphic>
+        </Button>
+    </children>
+    </HBox>
+   <TabPane prefHeight="766.0" prefWidth="1000.0" stylesheets="@TabStyle.css" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="个人信息">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+       </Tab>
+       <Tab text="已选课程">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+       </Tab>
+         <Tab text="选课列表">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+         </Tab>
+     </tabs>
+   </TabPane>
+</VBox>

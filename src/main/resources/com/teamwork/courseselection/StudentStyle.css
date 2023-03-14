@@ -1,0 +1,14 @@
+.tittleButton{
+    -fx-background-color: #87CEFA;
+}
+.tittleButton:hover{
+    -fx-background-color: #ADD8E6;
+}
+
+.Button{
+    -fx-border-radius: 10px;
+    -fx-background-color: #87CEFA;
+}
+.Button:hover{
+    -fx-background-color: #ADD8E6;
+}

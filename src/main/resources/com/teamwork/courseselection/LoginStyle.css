@@ -1,0 +1,24 @@
+.logText{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #87CEFA;
+    -fx-background-color: white;
+}
+.logButton{
+    -fx-border-radius: 10px;
+    -fx-background-color: #87CEFA;
+}
+.logButton:hover{
+    -fx-background-color: #ADD8E6;
+}
+.tittleButton{
+    -fx-background-color: #87CEFA;
+}
+.tittleButton:hover{
+    -fx-background-color: #ADD8E6;
+}
+.switchButton{
+    -fx-background-color: white;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #87CEFA;
+}

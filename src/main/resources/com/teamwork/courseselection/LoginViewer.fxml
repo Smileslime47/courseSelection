@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox fx:id="logWin" alignment="TOP_CENTER" prefHeight="297.0" prefWidth="453.0" spacing="20.0" style="-fx-background-color: white; -fx-spacing: 0px;" stylesheets="@LoginStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teamwork.courseselection.LoginController">
+   <HBox alignment="TOP_RIGHT" prefHeight="36.0" prefWidth="453.0" style="-fx-background-color: #87CEFA;">
+      <children>
+         <Button minWidth="42.0" mnemonicParsing="false" onAction="#minWin" prefHeight="42.0" prefWidth="42.0" styleClass="tittleButton">
+            <graphic>
+               <FontIcon iconLiteral="fltfal-line-horizontal-1-20" iconSize="12" />
+            </graphic>
+         </Button>
+         <Button minWidth="42.0" mnemonicParsing="false" onAction="#closeWin" prefHeight="42.0" prefWidth="42.0" styleClass="tittleButton">
+             <graphic>
+                 <FontIcon iconLiteral="fltfal-dismiss-12" iconSize="12" />
+             </graphic>
+         </Button>
+      </children>
+   </HBox>
+   <Pane prefHeight="109.0" prefWidth="453.0" style="-fx-background-color: #87CEFA;" />
+   <Separator orientation="VERTICAL" prefHeight="11.0" prefWidth="5.0" visible="false" />
+   <HBox fx:id="acntHBox" alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="406.0" style="-fx-padding: 0px 20px;">
+      <children>
+          <Label fx:id="acntLable" prefHeight="38.0" prefWidth="34.0" text="学号">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <TextField fx:id="acntText" prefHeight="31.0" prefWidth="343.0" styleClass="logText" />
+            <FontIcon iconLiteral="fltfmz-person-48" iconSize="24" wrappingWidth="32.0" />
+      </children>
+   </HBox>
+   <Separator orientation="VERTICAL" prefHeight="11.0" prefWidth="5.0" visible="false" />
+   <HBox fx:id="pswdHBox" alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="406.0" style="-fx-padding: 0px 20px;">
+      <children>
+         <Label prefHeight="38.0" prefWidth="34.0" text="密码">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <PasswordField fx:id="pswdText" prefHeight="31.0" prefWidth="343.0" styleClass="logText" />
+         <FontIcon iconLiteral="fltfal-lock-12" iconSize="24" wrappingWidth="32.0" />
+      </children>
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+   </HBox>
+   <Separator orientation="VERTICAL" prefHeight="11.0" prefWidth="5.0" visible="false" />
+   <HBox alignment="TOP_CENTER" prefHeight="38.0" prefWidth="453.0" style="-fx-background-color: white;">
+      <children>
+         <ToggleButton fx:id="switchButton" mnemonicParsing="false" onAction="#switchLogin" prefHeight="40.0" prefWidth="160.0" styleClass="switchButton" text="切换至教师登陆">
+            <graphic>
+               <FontIcon fx:id="switchIcon" iconLiteral="fltfmz-toggle-left-16" iconSize="32" />
+            </graphic>
+         </ToggleButton>
+         <Separator prefHeight="13.0" prefWidth="1.0" visible="false" />
+         <Button mnemonicParsing="false" onAction="#loginButton" prefHeight="40.0" prefWidth="141.0" styleClass="logButton" text="登陆" textFill="WHITE">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>
